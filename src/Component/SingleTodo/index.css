@@ -1,0 +1,42 @@
+.todos__single {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 5px;
+  padding: 15px;
+  background-color: lightpink;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.todos__single:hover {
+  box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.32);
+  transform: scale(1.02);
+}
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 13px;
+  font-weight: 550;
+}
+.icon__group {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  gap: 8px;
+}
+.icon {
+  cursor: pointer;
+}
+s {
+  font-style: oblique;
+}
+
+@media (max-width: 700px) {
+  .todos__single {
+    width: 80%;
+  }
+  .icon__group {
+    gap: 4px;
+  }
+}
